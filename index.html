@@ -27,16 +27,15 @@
             body { background-color: white; }
             .page-break { page-break-after: always; }
         }
+        /* RUTA CORREGIDA PARA EL FONDO DEL HERO */
         .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-            url('images/Copas_Termicas_Detalle.jpeg');
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('NigguisPage/images/Copas_Termicas_Detalle.jpeg');
             background-size: cover;
             background-position: center;
         }
         .bg-accent { background-color: #1a4d2e; }
         .text-accent { color: #1a4d2e; }
         
-        /* Modal Styles */
         .modal {
             display: none;
             position: fixed;
@@ -51,7 +50,7 @@
         .modal-content {
             background-color: #fdfaf6;
             margin: 5% auto;
-            padding: 2.5rem;
+            padding: 2rem;
             border-radius: 1.5rem;
             width: 90%;
             max-width: 600px;
@@ -109,10 +108,10 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="grid grid-cols-2 gap-4">
                     <div class="img-container shadow-lg">
-                        <img src="images/Abanico_Amarillo.jpeg" alt="Abanico Amarillo Colibrí">
+                        <img src="NigguisPage/images/Abanico_Amarillo.jpeg" alt="Abanico Amarillo Colibrí">
                     </div>
                     <div class="img-container shadow-lg mt-8">
-                        <img src="images/Abanico_Verde.jpeg" alt="Abanico Verde Pareja Colibríes">
+                        <img src="NigguisPage/images/Abanico_Verde.jpeg" alt="Abanico Verde Pareja Colibríes">
                     </div>
                 </div>
                 <div>
@@ -142,10 +141,10 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="grid grid-cols-2 gap-4">
                     <div class="img-container shadow-lg">
-                        <img src="images/Copas_Termicas_Detalle.jpeg" alt="Set de Copas Térmicas Colores">
+                        <img src="NigguisPage/images/Copas_Termicas_Detalle.jpeg" alt="Set de Copas Térmicas Colores">
                     </div>
                     <div class="img-container shadow-lg mt-8">
-                        <img src="images/Copas_Termicas_Set.jpeg" alt="Detalle Pintura Copas">
+                        <img src="NigguisPage/images/Copas_Termicas_Detalle.jpeg" alt="Detalle Pintura Copas">
                     </div>
                 </div>
                 <div>
@@ -183,10 +182,10 @@
                 </div>
                 <div class="order-1 md:order-2 grid grid-cols-2 gap-4">
                     <div class="img-container shadow-xl">
-                        <img src="images/jarra.jpeg" alt="Jarra Picaflor">
+                        <img src="NigguisPage/images/jarrra.jpeg" alt="Jarra Picaflor">
                     </div>
                     <div class="img-container shadow-xl mt-8">
-                        <img src="images/Jarra_Detalle.jpeg" alt="Jarra Detalle Loros">
+                        <img src="NigguisPage/images/Jarra_Detalle.jpeg" alt="Jarra Detalle Loros">
                     </div>
                 </div>
             </div>
@@ -203,7 +202,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div class="product-card bg-gray-50 p-6 rounded-3xl shadow-sm border border-gray-100">
                     <div class="img-container mb-6">
-                       <img src="images/Vasos_Aves_Paraguayas.jpeg" alt="Vaso Aves Paraguayas">
+                        <img src="NigguisPage/images/Vasos_Aves_Paraguayas.jpeg" alt="Vaso Aves Paraguayas">
                     </div>
                     <h4 class="text-2xl font-bold mb-3">Edición Fauna Local</h4>
                     <p class="text-gray-600 mb-6 font-light">Retratos de garzas en humedales y cardenales, capturando la biodiversidad de nuestra tierra.</p>
@@ -211,7 +210,7 @@
                 </div>
                 <div class="product-card bg-gray-50 p-6 rounded-3xl shadow-sm border border-gray-100">
                     <div class="img-container mb-6">
-                         <img src="images/Vasos_Paisajes_y_naturaleza.jpeg" alt="Vaso Paisaje y Naturaleza">
+                         <img src="NigguisPage/images/Vasos_Paisajes_y_naturaleza.jpeg" alt="Vaso Paisaje y Naturaleza">
                     </div>
                     <h4 class="text-2xl font-bold mb-3">Escenas de Naturaleza</h4>
                     <p class="text-gray-600 mb-6 font-light">Composiciones vibrantes de aves tropicales que resaltan en cada pincelada.</p>
@@ -224,11 +223,11 @@
     <section id="otros" class="py-20 px-6 bg-[#fdfaf6] page-break">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl text-accent mb-16 text-center">Tesoros para el Hogar</h2>
-            <div class="max-w-2xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-1 max-w-2xl mx-auto">
                 <div class="group text-center">
                     <div class="grid grid-cols-2 gap-4 mb-6">
-                        <img src="images/Caja_de_te_abierta.jpeg" alt="Caja de Té Abierta" class="rounded-lg shadow-md object-cover h-64 w-full">
-                        <img src="images/caja_de_te_cerrada.jpeg" alt="Caja de Té Cerrada" class="rounded-lg shadow-md object-cover h-64 w-full">
+                        <img src="NigguisPage/images/Caja_de_te_abierta.jpeg" alt="Caja de Té Abierta" class="w-full h-80 object-cover rounded-2xl shadow-lg group-hover:scale-105 transition-transform">
+                        <img src="NigguisPage/images/caja_de_te_cerrada.jpeg" alt="Caja de Té Cerrada" class="w-full h-80 object-cover rounded-2xl shadow-lg group-hover:scale-105 transition-transform mt-10">
                     </div>
                     <h3 class="text-3xl mb-4">Cajas de Té Artísticas</h3>
                     <p class="text-gray-600 mb-6 italic text-lg">Organiza tus sabores favoritos en estas piezas de madera con tapas pintadas a mano inspiradas en el jardín.</p>
@@ -255,3 +254,40 @@
             </div>
             
             <div class="mt-20 pt-10 border-t border-white/10">
+                <p class="text-sm text-green-300 uppercase tracking-[0.5em]">Hecho a mano en Paraguay</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="aiModal" class="modal no-print">
+        <div class="modal-content">
+            <div class="flex justify-between items-center mb-6">
+                <h3 id="modalTitle" class="text-3xl text-accent">✨ Asistente AI</h3>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+            </div>
+            <div id="modalBody">
+                <p id="modalDescription" class="mb-4 text-gray-600 italic">Cargando...</p>
+                <div id="inputArea" class="mb-6">
+                    <textarea id="aiInput" class="w-full p-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all" rows="3"></textarea>
+                </div>
+                <div id="aiResult" class="hidden mb-6 p-4 bg-white border border-green-100 rounded-xl text-gray-700 leading-relaxed shadow-inner max-h-60 overflow-y-auto"></div>
+                <div class="flex justify-end gap-3">
+                    <button onclick="closeModal()" class="px-6 py-2 text-gray-500 hover:text-gray-700">Cerrar</button>
+                    <button id="aiButton" class="bg-accent text-white px-8 py-2 rounded-full hover:bg-green-800 transition-all">Generar ✨</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(mode) {
+            const modal = document.getElementById('aiModal');
+            document.getElementById('aiResult').classList.add('hidden');
+            modal.style.display = "block";
+        }
+        function closeModal() {
+            document.getElementById('aiModal').style.display = "none";
+        }
+    </script>
+</body>
+</html>
