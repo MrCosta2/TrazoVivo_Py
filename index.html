@@ -28,11 +28,11 @@
             .page-break { page-break-after: always; }
         }
         .hero-bg {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url('images/Copas_Termicas_Detalle.jpeg');
-    background-size: cover;
-    background-position: center;
-}
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url('images/Copas_Termicas_Detalle.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
         .bg-accent { background-color: #1a4d2e; }
         .text-accent { color: #1a4d2e; }
         
@@ -51,7 +51,7 @@
         .modal-content {
             background-color: #fdfaf6;
             margin: 5% auto;
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 1.5rem;
             width: 90%;
             max-width: 600px;
@@ -183,7 +183,7 @@
                 </div>
                 <div class="order-1 md:order-2 grid grid-cols-2 gap-4">
                     <div class="img-container shadow-xl">
-                        <img src="images/jarrra.jpeg" alt="Jarra Picaflor">
+                        <img src="images/jarra.jpeg" alt="Jarra Picaflor">
                     </div>
                     <div class="img-container shadow-xl mt-8">
                         <img src="images/Jarra_Detalle.jpeg" alt="Jarra Detalle Loros">
@@ -224,11 +224,12 @@
     <section id="otros" class="py-20 px-6 bg-[#fdfaf6] page-break">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl text-accent mb-16 text-center">Tesoros para el Hogar</h2>
-            <div class="grid grid-cols-1 md:grid-cols-1 max-w-2xl mx-auto">
+            <div class="max-w-2xl mx-auto">
                 <div class="group text-center">
                     <div class="grid grid-cols-2 gap-4 mb-6">
-                        <img src="images/Caja_de_te_abierta.jpeg" alt="Caja de Té Cerrada">
-                        <img src="images/caja_de_te_cerrada.jpeg" alt="Caja de Té Abierta">
+                        <img src="images/Caja_de_te_abierta.jpeg" alt="Caja de Té Abierta" class="rounded-lg shadow-md object-cover h-64 w-full">
+                        <img src="images/caja_de_te_cerrada.jpeg" alt="Caja de Té Cerrada" class="rounded-lg shadow-md object-cover h-64 w-full">
+                    </div>
                     <h3 class="text-3xl mb-4">Cajas de Té Artísticas</h3>
                     <p class="text-gray-600 mb-6 italic text-lg">Organiza tus sabores favoritos en estas piezas de madera con tapas pintadas a mano inspiradas en el jardín.</p>
                     <p class="text-accent font-bold text-3xl">Gs. [Completar]</p>
@@ -254,41 +255,3 @@
             </div>
             
             <div class="mt-20 pt-10 border-t border-white/10">
-                <p class="text-sm text-green-300 uppercase tracking-[0.5em]">Hecho a mano en Paraguay</p>
-            </div>
-        </div>
-    </footer>
-
-    <div id="aiModal" class="modal no-print">
-        <div class="modal-content">
-            <div class="flex justify-between items-center mb-6">
-                <h3 id="modalTitle" class="text-3xl text-accent">✨ Asistente AI</h3>
-                <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
-            </div>
-            <div id="modalBody">
-                <p id="modalDescription" class="mb-4 text-gray-600 italic">Cargando...</p>
-                <div id="inputArea" class="mb-6">
-                    <textarea id="aiInput" class="w-full p-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all" rows="3"></textarea>
-                </div>
-                <div id="aiResult" class="hidden mb-6 p-4 bg-white border border-green-100 rounded-xl text-gray-700 leading-relaxed shadow-inner max-h-60 overflow-y-auto"></div>
-                <div class="flex justify-end gap-3">
-                    <button onclick="closeModal()" class="px-6 py-2 text-gray-500 hover:text-gray-700">Cerrar</button>
-                    <button id="aiButton" onclick="handleAiCall()" class="bg-accent text-white px-8 py-2 rounded-full hover:bg-green-800 transition-all">Generar ✨</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function openModal(mode) {
-            const modal = document.getElementById('aiModal');
-            document.getElementById('aiResult').classList.add('hidden');
-            modal.style.display = "block";
-        }
-        function closeModal() {
-            document.getElementById('aiModal').style.display = "none";
-        }
-    </script>
-</body>
-</html>
-
